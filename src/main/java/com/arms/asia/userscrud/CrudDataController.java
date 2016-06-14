@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class CrudDataController {
 	
 	@Autowired
-	CrudDataRepository repository;
+	private CrudDataRepository repository;
 	
 	@RequestMapping("/list")
 	public String list(Model model){

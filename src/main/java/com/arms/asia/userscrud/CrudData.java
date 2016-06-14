@@ -14,10 +14,17 @@ public class CrudData {
 	private Integer id;
 	private String name;
 
+	public CrudData(){
+	}
 	
 	public CrudData(String name){
 		this.name = name;
 	}
+	
+	public Integer getId(){
+		return id;
+	}
+	
 	public String getName() {
 		return name;
 	}

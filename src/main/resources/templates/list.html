@@ -6,6 +6,12 @@
 </head>
 <body>
 <p th:text="${msg}" />
-<p th:text="${users}" />
+<table>
+<tr th:each="user : ${users}">
+	<td th:text="${user.id}" />
+	<td th:text="${user.name}" />
+</tr>
+</table>
+
 </body>
 </html>

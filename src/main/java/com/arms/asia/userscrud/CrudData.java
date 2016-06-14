@@ -19,8 +19,8 @@ public class CrudData {
 	
 	public CrudData(String name){
 		this.name = name;
-//		this.createdDate = Calendar.getInstance().getTime();
-//		this.unpdatedDate = Calendar.getInstance().getTime();
+		this.createdDate = Calendar.getInstance().getTime();
+		this.unpdatedDate = Calendar.getInstance().getTime();
 	}
 
 	public String getName() {

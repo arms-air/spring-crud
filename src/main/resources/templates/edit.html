@@ -1,0 +1,18 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title >Editing the selected user</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+	<p th:text="${msg}" />
+	<hr />
+	<form method="post" th:action="@{/list/edit}">
+		<input type="hidden" name="id" th:value="${user.id}" />
+		<input type="text" name="name" th:value="${user.name}" />
+		<button type="submit" id="ok">Edit</button>
+		<button type="reset" id="reset" >Reset</button>
+	</form>
+	<p><a href="#" th:href="@{/list}">Back to the list</a></p>
+</body>
+</html>

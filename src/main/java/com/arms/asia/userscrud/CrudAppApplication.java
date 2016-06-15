@@ -22,4 +22,5 @@ public class CrudAppApplication implements CommandLineRunner {
 		repository.save(new CrudData("John"));
 		repository.save(new CrudData("Bob"));
 	}
+
 }

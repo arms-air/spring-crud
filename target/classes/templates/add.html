@@ -1,0 +1,17 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title >Adding a new user</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+	<p th:text="${msg}" />
+	<hr />
+	<form method="post" th:action="@{/list/create}">
+		<input type="text" name="name" />
+		<button type="submit" id="ok">Create</button>
+		<button type="reset" id="reset">Reset</button>
+	</form>
+	<p><a href="#" th:href="@{/list}">Back to the list</a></p>
+</body>
+</html>

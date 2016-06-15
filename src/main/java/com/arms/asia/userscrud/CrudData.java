@@ -1,7 +1,6 @@
 package com.arms.asia.userscrud;
 
 
-
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.GeneratedValue;
@@ -18,6 +17,12 @@ public class CrudData {
 	}
 	
 	public CrudData(String name){
+		this.name = name;
+	}
+	
+	
+	public CrudData(Integer id, String name){
+		this.id = id;
 		this.name = name;
 	}
 	

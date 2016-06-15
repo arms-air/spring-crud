@@ -1,17 +1,20 @@
 <!DOCTYPE HTML>
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
-    <title ></title>
+    <title >Users' list</title>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 </head>
 <body>
-<p th:text="${msg}" />
-<table>
-<tr th:each="user : ${users}">
-	<td th:text="${user.id}" />
-	<td th:text="${user.name}" />
-</tr>
-</table>
-
+	<p th:text="${msg}" />
+	<hr />
+	<table>
+		<tr th:each="user : ${users}">
+			<td th:text="${user.id}" />
+			<td th:text="${user.name}" />
+			<td><a href="#" th:href="@{/list/edit/} + ${user.id}">Edit</a></td>
+			<td><a href="#" th:href="@{/list/delete/} + ${user.id}">Delete</a></td>
+		</tr>
+	</table>
+	<p><a href="#" th:href="@{/list/add/}">Create a new user</a></p>
 </body>
 </html>
